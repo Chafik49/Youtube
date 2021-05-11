@@ -1,0 +1,389 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(36, 34, 34);
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+.container {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+
+    border-bottom: 1px solid rgb(83, 82, 82);
+    
+}
+.container > div {
+    width: calc(100% / 3);
+    height: fit-content;
+    padding: 5px;
+}
+
+.container > i {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.bars ul {
+    position: absolute;
+    margin-top: 17px;
+    /* background-color: rgb(70, 69, 69); */
+    padding: 20px 0px 20px 10px;
+    list-style-type: none;
+    text-align: start;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 0px;
+    width: 170px;
+    z-index: 2;
+
+    /* display: none; */
+    /* border-right: 1px solid rgb(146, 146, 146); */
+    
+}
+
+/* .bars:hover ul {
+    display: inline-block;
+    left: 8px;
+} */
+
+.bars ul li {
+    margin-bottom: 20px;
+    /* background-color: tomato; */
+    padding: 10px 0px ;
+    color: rgb(199, 197, 197);
+    
+}
+
+.bars ul li:hover {
+    background-color:rgb(70, 69, 69);
+    color: #fff;
+}
+ul hr {
+    height: 0px;
+    color: rgb(199, 197, 197);
+    margin-bottom: 10px;
+
+
+}
+
+
+.bars li span {
+    font-size: 15px;
+    margin-left: 20px;
+    font-weight: 100;
+    
+}
+
+@media (max-width:767px) {
+    .container > i {
+        display: none;
+    }
+    
+}
+.logo {
+    position: relative;
+    text-align: start;
+
+}
+
+
+.logo img {
+    /* position: absolute; */
+    max-width: 100px;
+    cursor: pointer;
+}
+
+.logo img::after {
+    content: "MA";
+    color: rgb(122, 122, 122);
+    position: absolute;
+    right: 0;
+}
+
+.search-zone {
+    position: relative;
+    display: flex;
+    
+    
+    
+
+}
+
+.search-zone .input {
+    /* position: absolute; */
+    width: 85%; 
+    border: none;
+    outline: none;
+    padding: 8px 0px 8px 10px;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-transform: capitalize;
+    margin-left: -70px;
+    
+}
+.input:focus {
+    border: 1px solid lightgray;
+}
+@media (max-width:767px) {
+    .search-zone {
+        display: none;
+    }
+}
+.search-zone i {
+    font-size: 20px;
+    cursor: pointer;
+}
+.search-zone i:first-of-type{
+    background-color: rgb(49, 49, 49);
+    padding: 8px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(161, 161, 161);
+}
+i.search:hover{
+    color:#fff;
+}
+@media (max-width:767px) {
+    .search-zone i:first-of-type {
+        background-color: transparent;
+    }
+}
+
+
+
+.search-zone i:last-of-type{
+    
+    padding: 8px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.tools {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+   
+
+}
+.tools * {
+    margin-left: 50px;
+    
+}
+@media (max-width:767px) {
+    .tools * {
+        margin-left: 40px;
+    }
+}
+@media (max-width:500px) {
+    .tools * {
+        margin-left: 22px;
+    }
+}
+
+
+.tools i {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    
+}
+@media (max-width:767px) {
+    .tools i {
+        font-size: 18px;
+    }
+}
+.tools i.notif::after {
+    content:"9+";
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: red;
+    border-radius: 6px;
+    padding: 0px 2px;
+    position: absolute;
+    margin-left: -8px;
+    margin-top: -5px;
+
+
+}
+
+.tools img {
+    max-width: 40px;
+    max-height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+@media(min-width:768px) {
+
+    .tools .wifi,
+    .tools .srh {
+        display: none;
+    }
+}
+
+@media (max-width:767px) {
+    .tools .vid,
+    .tools .sq{
+        display: none;
+    }
+}
+
+
+
+.sugsestion {
+    /* background-color: lightseagreen; */
+    padding-bottom: 10px;
+    margin-left: 182px;
+    /* margin-top: 10px; */
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 1px solid rgb(68, 67, 67);
+    /* overflow: hidden; */
+    
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    /* flex-wrap:wrap ; */
+
+}
+
+.content > div {
+    background-color: rgb(102, 100, 100);
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    padding:5px 10px ;
+    border: 1px solid rgb(110, 110, 110);
+    color: white;
+    font-weight: 100;
+    /* margin-bottom: 10px; */
+    /* margin-top: 10px; */
+    
+    
+}
+
+.content div:first-child {
+    background-color: #fff;
+    color: gray;
+}
+.content i {
+    font-size: 15px;
+    color: gainsboro;
+   
+}
+
+
+@media (max-width:1199px) {
+    .content div:nth-child(3),
+    .content div:nth-child(5),
+    .content div:nth-child(6)    {
+        display: none;
+    }
+    .content > div {
+        margin: auto 15px;
+    }
+}
+
+@media (max-width:767px) {
+    .sugsestion {
+        margin-left: 0px;
+        /* max-width: 90%; */
+    }
+    .content div:nth-child(3),
+    .content div:nth-child(4),
+    .content div:nth-child(5),
+    .content div:nth-child(6),
+    .content div:nth-child(7) {
+        display: none;
+    }
+}
+
+.videos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-basis: calc(100% / 3);
+    padding-left: 180px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@media (max-width:767px) {
+    .videos {
+        padding-left: 5px;
+    }
+    
+}
+
+.vid {
+    margin: 20px 10px;
+    /* text-align: center; */
+}
+.vid img:first-of-type {
+    max-width: 290px;
+    height: 200px;
+}
+
+.profil {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+
+    
+}
+
+.profil i{
+    
+    /* margin-left: 45px; */
+    color: gray;
+}
+
+.profil > div {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: gray;
+    margin-right: 10px;
+    
+    
+}
+
+.profil h3 {
+    font-size: 15px;
+    text-align: start;
+}
+
+.name {
+    color: rgb(161, 160, 160);
+    text-align: center;
+    margin-top: -18px;
+}
+
+.views {
+    color: rgb(161, 160, 160);
+    text-align: center;
+}
+
+.views span {
+    margin-right: 10px;
+}
